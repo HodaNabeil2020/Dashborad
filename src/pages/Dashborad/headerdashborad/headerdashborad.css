@@ -1,0 +1,21 @@
+
+
+
+.header-dashborad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  height: 69px;
+  padding: 10px 50px;
+}
+
+.header-dashborad > div {
+  color: var(--seconed-color);
+  padding: 10px;
+
+}
+.header-dashborad a {
+  color: var(--seconed-color);
+  font-weight: 600;
+}

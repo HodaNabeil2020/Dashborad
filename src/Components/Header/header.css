@@ -1,0 +1,28 @@
+
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #B19470
+}
+
+.logo {
+  color: var(--seconed-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.nav-links li  a {
+  display: block;
+  color: var(--seconed-color)
+}

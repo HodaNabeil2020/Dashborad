@@ -1,0 +1,126 @@
+.dashbord {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #e7d5be;
+}
+
+.left-sidebar {
+  flex-basis: 22%;
+  background-color: var(--seconed-color);
+  height: calc(100vh - 69px);
+  padding-left: 50px;
+}
+
+.left-sidebar a {
+  color: var(--main-color);
+  cursor: pointer;
+  font-weight: 600;
+  display: block;
+  letter-spacing: 1px;
+  padding: 10px 0;
+}
+
+.left-sidebar a i {
+  margin-right: 10px;
+  color: var(--bg-color);
+}
+.container-users {
+  flex-basis: 78%;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: var(--main-color);
+}
+.container-icons div {
+  position: relative;
+  top: 6px;
+}
+.container-table {
+  width: 100%;
+  box-shadow: 0px 0px 5px 1px #2d1c0775;
+
+  overflow: hidden;
+}
+tr:nth-child(even) {
+  background-color: var(--seconed-color);
+  color: var(--main-color);
+}
+tr {
+  border-bottom: 4px solid var(--seconed-color);
+  color: var(--seconed-color);
+}
+.container-table th {
+  color: var(--seconed-color);
+  padding: 15px;
+}
+th,
+td {
+  text-transform: capitalize;
+}
+.container-table td {
+  text-align: center;
+  padding: 10px 14px;
+}
+.container-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.container-icons div {
+  border-radius: 6px;
+}
+.container-icons div,
+.container-icons div a {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  top: -1px;
+}
+
+.container-icons div a {
+  color: var(--main-color);
+  background: var(--bg-color);
+}
+.container-icons div:first-child {
+  background: var(--bg-color);
+  color: var(--main-color);
+}
+
+/* Page up date  */
+.page-update-user > h3 {
+  color: var(--color-hover);
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header-dashborad {
+    padding: 10px 30px !important;
+  }
+  .container-users {
+    padding-right: 30px !important;
+  }
+  .container-table th,
+  .container-table td {
+    padding: 10px !important;
+  }
+  .container-icons div,
+  .container-icons div a {
+    width: 30px;
+    height: 30px;
+  }
+  .left-sidebar {
+    width: 18% !important;
+    padding-left: 30px !important;
+  }
+
+  .container-users {
+    width: 82% !important;
+  }
+}
